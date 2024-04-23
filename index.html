@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .welcome-message h1 {
+  font-size: 50px; /* Increased font size for the title */
+  margin-bottom: 0; /* Remove the default bottom margin */
+  margin-top: -120px; /* Move the title up by 40px */
+  color: #000;
+}
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .video-bg video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .welcome-message {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .get-started-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px 40px; /* Increased padding for larger button */
+      border: none;
+      border-radius: 10px; /* Increased border radius for rounded corners */
+      font-size: 24px; /* Increased font size for larger text */
+      cursor: pointer;
+      text-decoration: none;
+      animation: glowing 2s infinite alternate; /* Added glowing animation */
+    }
+
+    @keyframes glowing {
+      from {
+        box-shadow: 0 0 10px #007bff; /* Initial box-shadow */
+      }
+      to {
+        box-shadow: 0 0 20px #007bff, 0 0 40px #007bff, 0 0 60px #007bff; /* Glowing effect */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video-bg">
+      <video autoplay muted loop>
+        <source src="sky.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="welcome-message">
+      <h1>Welcome to My Website</h1>
+    </div>
+    <a href="Login.php" class="get-started-button">Get Started</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Shop Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(africa.jpg);
+           
+        }
+        .container {
+            width: 80%;
+            height: 700px;
+            margin: auto;
+            padding: 20px;
+            background-image: url(wood.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .contact-form {
+            margin-top: 30px;
+        }
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .map-container {
+    margin-top: 20px;
+    width: 70px;
+    height: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+                <div class="map-container">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.81751795695!2d36.820962474483075!3d-1.2833476356218938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f110049a8886b%3A0xc646c93b7d72eafd!2sNairobi%20town!5e0!3m2!1sen!2sca!4v1711410171857!5m2!1sen!2sca" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
